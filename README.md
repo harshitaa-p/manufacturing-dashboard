@@ -55,13 +55,13 @@ npm install
 
 ## Project Structure
 
-- **App.js**: Main entry point for routing and layout setup.
+- **App.jsx**: Main entry point for routing and layout setup.
 - **pages/**:
-  - `Dashboard.js`: Displays the main dashboard view with calculators and KPIs.
+  - `Dashboard.jsx`: Displays the main dashboard view with calculators and KPIs.
 - **components/**:
   - `Sidebar.js`: Contains navigation links.
-  - `common/Header.js`: Renders the page header.
-  - `OEEcalculator.js`, `RevenueLossCal.js`, `CostPerPieceCal.js`: Tools for metric calculations.
+  - `common/Header.jsx`: Renders the page header.
+  - `OEEcalculator.jsx`, `RevenueLossCal.jsx`, `CostPerPieceCal.jsx`: Tools for metric calculations.
 
 ---
 
