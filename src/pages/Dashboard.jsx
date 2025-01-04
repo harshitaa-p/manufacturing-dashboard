@@ -44,7 +44,7 @@ const Dashboard = () => {
     type="text"
     id="searchInput"
     placeholder="Search"
-    className="block p-2 mt-1 text-black border rounded-lg focus:ring-1 focus:ring-blue-500 focus:outline-none"
+    className="block p-2 mt-1 text-black border rounded-lg shadow-sm focus:ring-1 focus:ring-blue-500 focus:outline-none"
     value={searchTerm}
     onChange={handleSearchChange}
     
@@ -54,10 +54,10 @@ const Dashboard = () => {
 
       <div className="grid grid-cols-1 gap-6 mx-4 my-10 text-black sm:grid-cols-2 lg:grid-cols-3">
      
-        <div className="p-3 bg-white rounded shadow">
+        <div className="p-3 bg-white shadow-xl rounded-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold ">Today's Users</h3>
-            <div className="p-3 mt-5 bg-blue-500 rounded-xl">
+            <div className="p-3 mt-5 bg-blue-500 shadow-xl rounded-xl">
               <User color="white" />
             </div>
           </div>
@@ -67,10 +67,10 @@ const Dashboard = () => {
             </p>
           </div>
         </div>
-        <div className="p-3 bg-white rounded shadow">
+        <div className="p-3 bg-white shadow-xl rounded-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold ">New Clients</h3>
-            <div className="p-3 mt-5 bg-blue-500 rounded-xl">
+            <div className="p-3 mt-5 bg-blue-500 shadow-xl rounded-xl">
             <UserRoundPlus color="white" />
             </div>
           </div>
@@ -81,10 +81,10 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="p-3 bg-white rounded shadow">
+        <div className="p-3 bg-white shadow-xl rounded-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold ">Today's Sales</h3>
-            <div className="p-3 mt-5 bg-blue-500 rounded-xl">
+            <div className="p-3 mt-5 bg-blue-500 shadow-xl rounded-xl">
             <ChartNoAxesCombined color="white" />
             </div>
           </div>

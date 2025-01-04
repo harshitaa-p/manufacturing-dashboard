@@ -26,7 +26,7 @@ const CostPerPieceCalculator = () => {
   };
 
   return (
-    <div className="max-w-3xl p-6 mx-auto bg-white rounded-lg shadow-md">
+    <div className="max-w-3xl p-6 mx-auto bg-white rounded-lg shadow-2xl">
       <h3 className="mb-6 text-xl font-bold text-center text-gray-700">Cost per Unit Calculator</h3>
       <div className="grid grid-cols-2 gap-6">
         <div>
@@ -112,13 +112,13 @@ const CostPerPieceCalculator = () => {
       </div>
       <button
         onClick={calculateCostPerUnit}
-        className="w-full px-4 py-2 mt-6 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600"
+        className="w-full px-4 py-2 mt-6 font-semibold text-white bg-blue-500 shadow-xl rounded-xl hover:bg-blue-600"
       >
         Calculate Cost per Unit
       </button>
 
       {costPerUnit !== null && (
-        <div className="mt-6 text-center">
+        <div className="mt-6 text-center shadow-xl rounded-xl">
           <h4 className="text-xl font-bold text-gray-700">Cost per Unit</h4>
           <p className="mt-2 text-2xl font-semibold text-blue-600">Rs. {costPerUnit}</p>
         </div>

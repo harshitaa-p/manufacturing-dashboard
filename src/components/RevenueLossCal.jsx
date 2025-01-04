@@ -36,7 +36,7 @@ const RevenueLossCalculator = () => {
   };
 
   return (
-    <div className="max-w-4xl p-6 mx-auto bg-white rounded-lg shadow-md">
+    <div className="max-w-4xl p-6 mx-auto bg-white rounded-lg shadow-2xl">
       <h3 className="mb-6 text-2xl font-bold text-center text-gray-700">
         Revenue Loss Calculator
       </h3>
@@ -87,22 +87,22 @@ const RevenueLossCalculator = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-6 mt-6">
-        <div className="p-4 border rounded bg-gray-50">
+        <div className="p-4 border shadow-xl rounded-xl bg-gray-50">
           <h4 className="text-lg font-semibold text-gray-600">Total Downtime</h4>
           <p className="mt-2 text-2xl font-bold text-blue-600">{totalDowntime} mins</p>
         </div>
-        <div className="p-4 border rounded bg-gray-50">
+        <div className="p-4 border shadow-xl rounded-xl bg-gray-50">
           <h4 className="text-lg font-semibold text-gray-600">Total Pieces Lost</h4>
           <p className="mt-2 text-2xl font-bold text-red-600">{totalPiecesLost} pcs</p>
         </div>
-        <div className="p-4 border rounded bg-gray-50">
+        <div className="p-4 border shadow-xl rounded-xl bg-gray-50">
           <h4 className="text-lg font-semibold text-gray-600">Revenue Loss</h4>
           <p className="mt-2 text-2xl font-bold text-green-600">₹{revenueLoss}</p>
         </div>
       </div>
       <button
         onClick={handleCalculate}
-        className="w-full px-4 py-2 mt-6 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600"
+        className="w-full px-4 py-2 mt-6 font-semibold text-white bg-blue-500 shadow-xl rounded-xl hover:bg-blue-600"
       >
         Calculate and Add to Graph
       </button>

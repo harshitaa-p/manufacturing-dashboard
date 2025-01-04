@@ -35,7 +35,7 @@ const OEECalculator = () => {
   ];
 
   return (
-    <div className="p-4 bg-gray-100 rounded shadow">
+    <div className="p-4 bg-gray-100 rounded shadow-2xl">
       <h3 className="mb-4 text-xl font-bold">OEE Calculator</h3>
       <div className="flex flex-col items-center justify-center">
         <PieChart width={250} height={250}>
@@ -63,7 +63,7 @@ const OEECalculator = () => {
       </div>
       <div className="grid grid-cols-3 gap-4 mt-4">
         {/* Availability Section */}
-        <div className="p-4 bg-white border rounded">
+        <div className="p-4 bg-white border shadow-xl rounded-xl">
           <h4 className="font-bold text-green-600">Availability</h4>
           <div className="mt-2">
             <label className="block text-sm">Shift Time (mins)</label>
@@ -96,7 +96,7 @@ const OEECalculator = () => {
         </div>
 
         {/* Performance Section */}
-        <div className="p-4 bg-white border rounded">
+        <div className="p-4 bg-white border shadow-xl rounded-xl">
           <h4 className="font-bold text-yellow-600">Performance</h4>
           <div className="mt-2">
             <label className="block text-sm">Ideal Cycle Time (pcs/min)</label>
@@ -120,7 +120,7 @@ const OEECalculator = () => {
         </div>
 
         {/* Quality Section */}
-        <div className="p-4 bg-white border rounded">
+        <div className="p-4 bg-white border shadow-xl rounded-xl">
           <h4 className="font-bold text-blue-600">Quality</h4>
           <div className="mt-2">
             <label className="block text-sm">Good Units (pcs)</label>
